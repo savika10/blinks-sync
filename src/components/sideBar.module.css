@@ -1,0 +1,67 @@
+.sidebar {
+position: fixed;
+  left: -250px;
+  top: 60px; /* below navbar */
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(241, 169, 189, 0.4);/* pink + translucency */
+  transition: left 0.3s ease;
+  padding: 1rem;
+  z-index: 999;
+  backdrop-filter: blur(8px); /* Optional: makes background glassy */
+  box-shadow: 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0rem 1rem;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* .sidebar ul:hover {
+  color: #ff69b4;
+} */
+
+.menu {
+  list-style: none;
+  padding: 0rem 1rem;
+   border-bottom: 1px solid #000; /* or any color */
+  padding: 0.5rem 0;
+}
+
+.menu li {
+  margin-bottom: 1rem;
+}
+
+.menu li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.icon{
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.field{
+  cursor: pointer;
+  color: #000;
+  display: flex;
+      align-items: end;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}

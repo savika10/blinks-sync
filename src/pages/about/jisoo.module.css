@@ -1,0 +1,65 @@
+.wrapperJisooAbout{
+     height: calc(100vh - 3.6rem); 
+    margin-top: 3.6rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.aboutImage{
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* soft shadow */
+  border-radius: 20px; /* optional */
+  overflow: hidden; /* optional for rounded edges */
+}
+
+.jisooAboutText{
+    font-family: serif;
+    width: 30vw;
+}
+
+
+.wrapperJisooAboutMobile{
+    visibility: hidden;
+}
+
+
+@media (max-width:867px){
+ .wrapperJisooAbout{
+    visibility: hidden;
+    width: 0vw;
+    height: 0vh;
+    padding: 0px;
+    margin:0px;
+ }
+ .wrapperJisooAboutMobile{
+    visibility: visible;
+     height: calc(100vh - 3.6rem); 
+    margin-top: 3.6rem;
+    padding: 2rem;
+ }
+ 
+ .imageMobileContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ .jisooAboutText{
+    font-family: serif;
+    width: 100vw;
+    font-size:0.9rem;
+ }
+
+ .textContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+}
+
+
+

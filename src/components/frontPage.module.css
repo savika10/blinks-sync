@@ -1,0 +1,166 @@
+.wrapper {
+  height: calc(100vh - 3.6rem); 
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  margin-top: 3.6rem;
+}
+
+.section {
+  height: calc(100vh - 3.6rem); 
+  scroll-snap-align: start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artistInfo {
+  scroll-snap-align: start;
+  height: calc(100vh - 3.6rem); 
+  background-repeat: no-repeat;
+}
+.artistflexContainer {
+  display: flex;
+}
+
+.introductionImage {
+  background-image: url("/images/jump2.png");
+}
+
+.intro{
+  width: 80vw;
+  margin-top: 15rem;
+}
+
+.image {
+  width: 50vw;
+  height: 46vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+      border: 0.1rem solid pink;
+      border-radius: 10px;
+     cursor: pointer;
+}
+
+.image:hover{
+ filter: brightness(1.2); /* Slightly brighten the image */
+  transform: scale(1.02);  /* Slight zoom effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  transition: all 0.3s ease; /* Smooth animation */
+}
+
+.jisooIntroImage {
+  background-image: url("/images/jisoo.png");
+}
+.jennieIntroImage {
+  background-image: url("/images/jennie.png");
+}
+
+.roseIntroImage {
+  background-image: url("/images/rose.png");
+}
+
+.lisaIntroImage {
+  background-image: url("/images/lisaa.png");
+}
+
+.textDesktop {
+  color: #000;
+font-size: 3rem;
+    font-family: serif;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+    justify-content: center;
+}
+
+.heading {
+  color: #000;
+ font-size: 4rem;
+    font-family: serif;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.content{
+    height: 46vh;
+    width: 100vw;
+     display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.aboutImage{
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* soft shadow */
+  border-radius: 20px; /* optional */
+  overflow: hidden; /* optional for rounded edges */
+}
+
+.pageAboutText{
+    width: 40vw;
+}
+
+.textMobile,
+.paraMobile{
+  visibility: hidden;
+}
+.artistInfoMobile{
+  visibility: hidden;
+}
+
+.contentMobile{
+  visibility: hidden;
+}
+
+@media (max-width:867px) {
+  .textMobile,
+.paraMobile{
+  visibility: visible;
+    font-family: serif;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+    justify-content: center;
+}
+
+.textMobile{
+  font-size: 2rem;
+}
+.paraMobile{
+  font-size: 1rem;
+}
+.textDesktop,
+.paraDesktop{
+  visibility: hidden;
+  width: 0vw;
+  height: 0vh;
+
+}
+.intro{
+  width: 80vw;
+  margin-top: 0rem;
+}
+.heading{
+  font-size: 2.5rem;
+}
+.content{
+  visibility: hidden;
+  width: 0vw;
+  height: 0vh;
+}
+.contentMobile{
+  visibility: visible;
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  font-size:0.9rem;
+}
+.pageAboutText{
+  width: 100vw;
+}
+
+}
